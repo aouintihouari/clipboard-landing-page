@@ -1,0 +1,514 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Bai Jamjuree", serif;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40%;
+  background-image: url(./images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: -30px auto;
+  text-align: center;
+}
+
+.hero__title {
+  margin: 0 auto 15px;
+  width: 70%;
+  margin-top: -30px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: -0.521739px;
+  color: #4c545c;
+}
+
+.hero__description {
+  margin: 0 auto 15px;
+  width: 73%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.12px;
+  color: #9eabb2;
+}
+
+.btn__container {
+  margin-block: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  cursor: pointer;
+  transition: 1s;
+  width: 73%;
+  height: 56px;
+  border-radius: 28px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.ios-btn {
+  background-color: #26bba4;
+  box-shadow: 0px 10px 20px rgba(137, 229, 199, 0.503305),
+    inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
+}
+
+.mac-btn {
+  background-color: #6174ff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.0988035),
+    inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
+}
+
+.feature-section {
+  margin: 150px auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-section__title {
+  margin: 5px auto;
+  width: 80%;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: -0.456522px;
+  color: #4c545c;
+}
+
+.feature-section__description {
+  margin: 5px auto;
+  margin-block: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.12px;
+  color: #9eabb2;
+}
+
+.feature-section__text-container {
+  margin: 50px auto;
+}
+
+.feature-section__text-title {
+  margin-block: 15px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.391304px;
+  color: #4c545c;
+}
+
+.feature-section__text-description {
+  margin-block: 25px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.12px;
+  color: #9eabb2;
+}
+
+.cross-device-support {
+  margin: 50px auto 100px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cross-device-support__title {
+  width: 90%;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: -0.456522px;
+  color: #4c545c;
+}
+
+.cross-device-support__description {
+  width: 90%;
+  margin-block: 25px 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.12px;
+  color: #9eabb2;
+}
+
+.workflow-tools {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.workflow-tools__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: -0.456522px;
+  color: #4c545c;
+}
+
+.workflow-tools__description {
+  margin-block: 30px 80px;
+  width: 80%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.12px;
+  color: #9eabb2;
+}
+
+.tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tool__image {
+  margin-block: 20px;
+}
+
+.tool__title {
+  margin-block: 15px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.391304px;
+  color: #4c545c;
+}
+
+.tool__description {
+  width: 90%;
+  margin-block: 10px 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.12px;
+  color: #9eabb2;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.partner__logo {
+  margin-block: 50px;
+}
+
+.download-section {
+  margin: 100px auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.download-section__title {
+  width: 80%;
+  margin: 20px auto;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: -0.456522px;
+  color: #4c545c;
+}
+
+.download-section__description {
+  width: 80%;
+  margin: 10px auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.12px;
+  color: #9eabb2;
+}
+
+.footer {
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: rgba(158, 171, 178, 0.1);
+}
+
+.footer__logo {
+  width: 33.6px;
+  height: 33.6px;
+}
+
+.footer__link {
+  margin-block: 30px;
+  cursor: pointer;
+  transition: 1s;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.135px;
+  color: #4c545c;
+}
+
+.footer__link:hover {
+  color: #26bba4;
+}
+
+.footer__social-icons {
+  display: flex;
+  gap: 30px;
+}
+
+.footer__social-icon {
+  cursor: pointer;
+  transition: 1s;
+  color: #4c545c;
+}
+
+.footer__social-icon:hover {
+  color: #26bba4;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    background-image: url(./images/bg-header-desktop.png);
+  }
+
+  .logo {
+    margin-top: -40px;
+  }
+
+  .hero__title {
+    font-size: 46px;
+    line-height: 58px;
+    letter-spacing: -0.75px;
+  }
+
+  .hero__description {
+    width: 45%;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.15px;
+  }
+
+  .btn__container {
+    margin-inline: auto;
+    width: 30%;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .feature-section {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .feature-section__title {
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.586957px;
+  }
+
+  .feature-section__description {
+    margin-bottom: 100px;
+    width: 60%;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.135px;
+  }
+
+  .feature-section__content {
+    margin-block: 30px;
+    text-align: left;
+    display: flex;
+    gap: 100px;
+  }
+
+  .feature-section__image {
+    position: relative;
+    left: -5%;
+  }
+
+  .feature-section__text-title,
+  .feature-section__text-description {
+    text-align: left;
+    width: 60%;
+  }
+
+  .feature-section__text-description {
+    margin-bottom: 50px;
+    line-height: 30px;
+  }
+
+  .cross-device-support__title {
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.586957px;
+  }
+
+  .cross-device-support__description {
+    width: 50%;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.135px;
+  }
+
+  .workflow-tools {
+    width: 90%;
+  }
+
+  .workflow-tools__title {
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.586957px;
+  }
+
+  .workflow-tools__description {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.135px;
+  }
+
+  .tools {
+    margin-left: -10%;
+    display: flex;
+    gap: 0;
+  }
+
+  .tool__description {
+    width: 65%;
+    line-height: 30px;
+  }
+
+  .partners {
+    flex-direction: row;
+  }
+
+  .download-section {
+    margin: 100px auto;
+  }
+
+  .download-section__title {
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.586957px;
+  }
+
+  .download-section__description {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.135px;
+  }
+
+  .footer {
+    padding-inline: 5%;
+    flex-direction: row;
+  }
+
+  .footer__links {
+    text-align: left;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  .footer__logo {
+    align-self: center;
+    width: 55px;
+    height: 55px;
+  }
+}
